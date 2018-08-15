@@ -1,0 +1,241 @@
+*{padding:0;
+margin:0;
+font-family:sans-serif;
+font-weight:lighter;
+line-height: 1.5;
+font-size:10pt;
+color:gray;
+overflow-x:hidden;
+}
+header{
+	width:100%;
+	border-bottom:1px solid lightgray;
+	padding-left:50px;
+}
+header p{padding-top:3px;}
+.logo{
+width:100%;
+animation-name:load;
+animation-duration: 5s ;
+}
+.logopic{width:30%;
+margin:0% 35% 0% 35%;}
+@keyframes load{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.logopic:hover{cursor:pointer;}
+.top-buttons{float:right;
+	padding-right:40px;
+}
+.nav{display:none;}
+#hamburgerMenu{animation-name:LoadMenu;
+animation-duration:2s;}
+@keyframes LoadMenu{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+.button1{border:0;
+	background:none;
+	color:gray;
+	margin-top:10px;
+	font-size:12pt;
+	padding-right:30px;
+	text-transform: uppercase;
+}
+.button1:hover{color:black;cursor:pointer;} 
+
+
+.menu{
+	width:80%;
+	margin:0% 10% 0% 10%;
+	border-bottom: 1px solid lightgray;
+}
+ul{padding-left:0px;}
+ul ul{padding-left:0px;
+position:absolute;  }
+ul li{
+	text-decoration: none;
+	background:white;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	width:19%;
+	font-size:12pt;
+	font-weight:lighter;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+a{text-decoration: none;}
+
+ul li ul li{line-height: 1.6;
+padding:10px;
+width:170px;
+display:none;
+text-align: center;
+opacity: 0.6;
+text-decoration: none;
+color:black;
+}
+ul li a{color:gray;}
+ul li ul li a{color:gray;}
+ul li a:hover{text-decoration: none;}
+ul li ul li a:hover{text-decoration: none;}
+li:hover{color:black;cursor:pointer;}
+ul li ul li:hover{
+	color:black;
+	opacity: 1;
+cursor:pointer;}
+ul li:hover ul li {
+	display:block;
+	cursor:pointer;
+	animation-duration: 1s;
+	animation-name:myAnimation;}
+@keyframes myAnimation{
+	from{opacity: 0;}
+	to{opacity:0.5;}
+}
+footer{width:100%;
+border-top:1px solid lightgray;
+}
+h5{text-align: center;
+margin:0;
+padding:0;}
+
+#Brands{
+	width:20%;
+	float:left;
+	margin-left:5%;
+	margin-top:5%;
+}
+#gallery{
+	width:70%;
+	height: auto;
+display:inline-flex;
+margin-top:5%;
+margin-left:5%;}
+.images{
+	width:40%; margin-left:5%;
+}
+.product{width:100%;}
+#banner{width:100%;
+}
+#menWatches{
+	width:70%;
+	overflow-y: hidden;
+	margin:0% 15%;
+	height:auto;
+	display:inline-block;
+}
+
+.image{
+	float:left;
+	width:50%;}
+.content{width:100%;}
+.description{
+width:50%;
+float:right;
+height:400px;
+background:#1e1e1e;}
+.description p{
+	width:80%;
+	margin:5% 10%;
+text-transform: uppercase;
+line-height:2.2;
+text-align:center;}
+.button2{
+	text-transform: uppercase;
+	padding:10px 20px 10px 20px;
+	width:40%;
+	margin:5% 30%;
+	border:1px solid gray;
+	color:gray;
+	background:0;}
+
+
+#watches{width:70%;
+	overflow-y: hidden;
+	margin:5% 15%;
+	display:inline-flex;
+height:400px;}
+.image2{width:50%;float: left;}
+.description2{
+width:50%;
+float:right;
+height:283px;
+background:#1e1e1e;}
+.description2 p{
+	width:80%;
+	margin:5% 10%;
+text-transform: uppercase;
+line-height:2.2;
+text-align:center;}
+.buttons{width:70%;margin:0% 15%;}
+.button3 {margin-right:5%;
+	text-transform: uppercase;
+	padding:10px 20px 10px 20px;
+	border:1px solid gray;
+	color:gray;
+	background:0;
+}
+.button4{
+	text-transform: uppercase;
+	padding:10px 20px 10px 20px;
+border:1px solid gray;
+	color:gray;
+	background:0;}
+
+@media(max-width:460px){
+	.menu{display:none;}
+	.top-buttons{
+	float:none;
+	margin-left:40%;}
+	.action{margin-left:30%;}
+	.button1{margin:0;padding-right:40px;}
+	.logopic{width:80%;margin:0% 10% 0% 10%;}
+.nav{display:block;}
+label{
+	font-size:30px;
+	margin-left:30px;
+	cursor:pointer;
+}
+#hamburgerMenu{
+width:70%;
+display:none;
+margin-left:20px;}
+#hamburgerMenu ol{width:auto;padding-left:20px;}
+#hamburgerMenu ul li{
+	text-align:left;
+	width:180px;
+border-bottom:1px solid lightgray;
+padding:5px 5px 5px 5px;}
+#hamburgerMenu ul li ul li{
+	margin-left:20px; 
+	background:0;
+	display:block;
+	border:0;}
+#toggle{display:none;}
+#toggle:checked + #hamburgerMenu{display:block;}
+#banner{width:110%;}
+#Brands{width:60%; margin:0 20%;}
+#gallery{width:100%;}
+#menWatches{width:100%;margin:0;}
+.button2{width:80%; margin:0 10%;}
+.description{width:100%;margin-top:5%;overflow-y:hidden;}
+.image{width:100%;}
+.description p{line-height:1.8;}
+#watches{width:100%;margin:0;display:block;margin-top:5%;}
+.image2{width:100%;}
+.description2{width:100%;margin-top:5%;}
+.description2 p{width:80%; margin:0 10%;height:auto;line-height:1.7;}
+.buttons{width:90%; margin:0 5%;display:inline-block;}
+.button3{margin:0;padding:5px;margin-right:5%;}
+.button4{margin:0;padding:5px;}
+}
+
+@media(min-width:700px) and (max-width: 1000px){
+	#menWatches{width:90%;margin:5% 5%;}
+	.description{overflow-y:hidden;}
+	.description p{line-height:1.6;}
+	.button2{width:80%; margin:0 10%;}
+}
