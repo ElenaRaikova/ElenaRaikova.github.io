@@ -14,6 +14,50 @@ header{
 	padding-left:50px;
 }
 header p{padding-top:3px;}
+
+#modal{
+	margin:0;padding:0;
+	position:fixed;
+	width:100%; 
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	display:none;
+	z-index: 10;
+}
+#modal2{
+	margin:0;padding:0;
+	position:fixed;
+	width:100%; 
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	display:none;
+	z-index: 10;
+
+}
+#modal-content{
+	width:30%;
+	height:450px;
+	margin:5% 35%;
+	background:white;
+}
+#modal-content2{
+	width:30%;
+	height:600px;
+	margin:2% 35%;
+	background:white;
+	overflow-y: hidden;
+}
+.formLogo{width:60%;margin:0 20%;}
+.registerLogo{width:50%; margin:0 25%;}
+#modal label{text-transform: uppercase;font-size:10pt;margin-left:10px;}
+#modal2 label {text-transform: uppercase;font-size:9pt;margin-left:10px;}
+input[type=text]{width:80%;padding:8px;margin:10px; }
+input[type=password]{width:80%;padding:8px;margin:10px;}
+#modal2 input[type=E-mail]{width:80%;padding:8px;margin:10px;}
+.LogIn{width:60%;margin:0% 20%; border:1px solid gray; color:gray;background-color: white;padding:10px;}
+.cancel{width:60%;margin:20px 20%; border:1px solid gray; color:gray;background-color: white;padding:10px;}
+.RegIn{width:60%;margin:20px 20%; border:1px solid gray; color:gray;background-color: white;padding:10px;}
+
 .logo{
 width:100%;
 animation-name:load;
@@ -43,6 +87,7 @@ animation-duration:2s;}
 	padding-right:30px;
 	text-transform: uppercase;
 }
+
 .button1:hover{color:black;cursor:pointer;} 
 #client{width:100%;
 border:1px solid lightgray;
@@ -261,6 +306,8 @@ padding:5px 5px 5px 5px;}
 	border:0;}
 #toggle{display:none;}
 #toggle:checked + #hamburgerMenu{display:block;}
+#modal-content{width:80%; margin:10% 10%;height:400px;overflow-y:hidden;}
+#modal-content2{width:80%; margin:10% 10%;height:550px;overflow-y:hidden;}
 }
 
 
@@ -317,9 +364,4 @@ ul li:hover ul li {
 	cursor:pointer;
 	animation-duration: 1s;
 	animation-name:myAnimation;}
-@keyframes myAnimation{
-	from{opacity: 0;}
-	to{opacity:0.5;}
-}
-
 }
